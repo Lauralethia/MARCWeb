@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">MARC form</h1>
+  <p class="lead">Multidimensional Assessment of Research in Context (MARC) Tool</p>
+  <hr class="my-4">
+  <section class="seccion">
+    <section class="seccion">
+      <article>
+        <p class="pagraph">Below you find some short questions regarding your research project. After submitting the form, a summary with your
+          answers and descriptions accompanied by a compass plot will appear. The graph indicates the match of your research idea with three categories that are controlled laboratory-based, partially naturalistic laboratory and naturalistic real-world
+          research [controlled laboratory research (CLR), partially naturalistic laboratory research approach (PNLRA), and
+          naturalistic real-world research approach (NRWRA)]. For every category, we added one main example in brackets.</p>
+          <p>The questions are related to the specific behavior are you trying to observe and the context you aim to generalize to. 
+            If you need more precise explanation or examples, please see them for each specific question here <a href="{{ url_for('moreinfo')}}">Examples and more</a>.</p>
+
+
+      </article>
+    </section>
+
+    <form method=post action="" id="contact">
+
+      <div class="questionary">
+        {% for field in form %}
+
+        <div class="question">
+          <div class="title">
+            <span class="title">
+              {{ field.label }}
+            </span>
+          </div>
+
+          <div class="answer">
+            {{ field }}
+            {% if field.errors %}
+            <ul class=errors>
+              {% for error in field.errors %}
+              <li>
+                <font color="red">{{ error }}</font>
+              </li>
+              {% endfor %}
+              {% endif %}
+          </div>
+          <br>
+          <!-- <br>   -->
+        </div>
+
+        {% endfor %}
+
+        <!-- {% if result != None %}
+        <td>
+          <p>
+            <img id='resultado' src="data:image/png;base64,{{ result }}">
+          </p>
+        </td>
+        {% endif %} -->
+        <div class="container" id="contact">
+          <button type="submit" name="submit" id="contact-submit" data-submit="...Sending">Submit and go to the summary</button>
+        </div>
+
+    </form>
+    </p>
+    </td>
+
+
+
+</div>
+
+{% endblock %}

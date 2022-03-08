@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4"> Multidimensional Assessment of Research in Context (MARC) Tool</h1>
+    <p class="lead">Relevance of Ecological Validity </p>
+    <!-- <h1 class="display-4">Are We Ready for Real-world Neuroscience?</h1>
+    <p class="lead">Relevance of Ecological Validity </p> -->
+    <hr class="my-4">
+    <section class="seccion">
+        <article>
+            <!-- <h2> Multidimensional Assessment of Research in Context (MARC) Tool</h2> -->
+            <time datetime="28-04-2020">Pre-release vertion, June 2021</time>
+            <img src="static/imagenes/logo2.png" class="resize1" />
+            <p class="pagraph">
+                In cognitive neurosciences, fundamental principles of mental processes and functional brain organization have been established with 
+                highly controlled tasks and testing environments. Recent technical advances allowed  the investigation of these functions and their
+                 brain mechanisms in naturalistic settings. The diversity in those approaches has been recently <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7116058/"  target="_blank">(Matusz et al. 2019a)</a> classified via 
+                 a three-category  cycle including controlled laboratory, partially naturalistic laboratory, and naturalistic real-world research. 
+            </p>
+            <p class="pagraph"> Based on this cycle, we developed the Multidimensional Assessment of Research in Context (MARC) tool to easily delineate the approach 
+                researchers have taken in their study. MARC provides means to describe the degree of ecological validity for each component of a study 
+                (e.g. sample, location, stimuli, measures etc) and the study’s location on the cycle. The tool comprises seven questions concerning a study’s 
+                characteristics. It outputs a summary of those and a compass plot, which can be used for presentations, pre-registration, grant proposals, 
+                and papers. It would improve drawing conclusions across studies, and raising awareness for the generalizability of studies.	 </p>
+
+        </article>
+    </section>
+    <p>You can find more information here:</p>
+    <!-- <a class="btn btn-primary btn-lg" href="https://psyarxiv.com/qb9tz/" role="button">Preprint</a>  -->
+    <a style="margin-left:7em" class="btn btn-primary btn-lg" href="https://psyarxiv.com/qb9tz/"  target="_blank" role="button">Preprint</a>
+    <!-- <div class="containerbutton">
+        <a class="btn btn-primary btn-lg" style="margin:auto" href="https://psyarxiv.com/qb9tz/" role="button">Preprint</a>
+    </div> -->
+
+    <br>
+    <br>
+
+    <section class="seccion">
+        <p> Or go directly to the <a href="{{ url_for('formulary_ask')}}">Form</a> </p>
+    </section>
+
+
+</div>
+
+{% endblock %}

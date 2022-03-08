@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="MARC form" />
+    <meta name="author" , content="Lauralethia" />
+    <meta name="keywords" , content="Naturalistic research" />
+    <title>MARC</title>
+    <!-- Boostrap 4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Adaptador 4 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" type="image/png" href="static/imagenes/logo2.png"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">MARC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="/">Home </a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('formulary_ask')}}">Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('moreinfo')}}">Examples and more</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('comments')}}">Feedback</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="agrupar">
+
+        <footer class="bd-footer text-muted">      
+            <div class="container-fluid p-3 p-md-5">
+                <p>Boosted by <a href="https://fluxsociety.org/">FLUX congress 2019</a> .</p>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

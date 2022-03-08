@@ -1,0 +1,279 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4">MARC additional information</h1>
+    <p class="lead">Thinking about the context you described in 1 a/b, which of the following best describes… </p>
+    <hr class="my-4">
+
+    <section class="seccion">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <div class="container"> 
+            <!-- 
+
+
+        <fieldset id="contact">
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending"> Information and more examples</button>
+        </fieldset>
+        --> 
+        <article>
+            <h4> 2. … how your sample reflects that context?</h4>
+            <p>When answering this question, consider how you recruit participants for your study, and whether your sample is representative of, e.g., your region.</p>
+
+            <p class="lead">Controlled laboratory research examples:</p>
+            <ul>
+                <li> <label> Control sample matched only by age and gender</label>  </li>
+                <li> <label> Preclinical studies</label>  </li>
+                <li> <label> Western, Educated, Industrialized, Rich, and Democratic (WEIRD) participants</label>  </li>
+                <li> <label> Control sample matched only by age and gender</label>  </li>
+                <li> <label> Recruiting children of professors at a university</label>  </li>
+
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <ul>
+                <li> <label> Recruiting an aging sample from several nearby community living facilities    </label>    </li>
+                <li> <label> Recruiting from one or few  local schools</label>  </li>
+
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <ul>
+                <li> <label> Recruiting large data sample that matches national demographic and socioeconomic status characteristic distribution                 </label></li>
+                <li> <label> Large crowd sourced data from public databases (e.g.: free narratives, subjective tags, etc)</label>  </li>
+
+            </ul>
+
+
+            <h4> 3. … how your testing site reflects that context?</h4>
+            <p class="lead">Controlled laboratory research examples:</p>
+            <ul>
+                <li> <label> In a lab testing room</label></li>
+                <li> <label> In an M/EEG lab or an MRI scanner/facility</label>          </li>
+                <li></label> Lab testing room in wet-lab facilities </label></li>
+
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <ul>
+                <li> <label> More naturalistic stimulation is delivered on a computer screen and/or while wearing M/EEG/fNIRS or being inside the scanner     </label></li>
+                <li> <label> In schools and classrooms but not in a typical classroom setting (during a normal lesson)    </label>       </li>
+                <li></label> Measuring EEG simultaneously in two participants who are interacting     </label></li>
+                <li></label> Lab that is set up to look like a classroom </label></li>
+                <li></label> Testing ambulatory patients </label></li>
+
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <ul>
+                <li> <label> In schools in a classroom with little to no experimenter presence and interference into teaching activitiest       </label></li>
+                <li> <label> Where the real-world behavior measured is natural (in the street, market, etc)</label>           </li>
+                <li> <label> At participant’s home </label>        </li>
+                <li> <label> Hyperscanning during a real concert  </label>        </li>
+
+            </ul>
+            
+            <h4> 4. … how your task reflects that context? </h4>
+            <p> Here is a general explanation for what the different categories mean with regard to the task plus more examples: </p>
+
+            <p class="lead">Controlled laboratory research examples:</p> 
+            <p> The process of interest is isolated by manipulating only a minimum number of factors in a specific experimental design, and all other factors are held constant</p>
+            <ul>
+                <li></label> Spatial orienting task involving a single target stimulus (a shape) preceded by a single cue/distractor</label></li>
+                <li></label> Inhibiting a button press to a trained stimulus</label>               </li>
+                <li></label> Flanker task (responding to the direction of a middle arrow, that is displayed between other arrows pointing in a similar or opposite direction)</label>               </li>
+                <li></label> Oddball task (responding to a target stimulus in a stream of distractors)</label>  </li>
+
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <p> Process-specific tasks are used in settings that resemble everyday situations</p>
+
+            <ul>
+                <li> <label>Selective attention task where both targets and distractors are presented in multi-stimulus arrays (visual search)</label>           </li>
+                <li></label>Tasks conducted in virtual reality or a room resembling a naturalistic context (kitchen, a flat or a simple shop)</label>          </li>
+                <li></label>Social interaction in the lab with a confederate    </label>                </li>
+                <li></label> Clinical neuropsychological task to measure cognitive functions such as fluid Intelligence [Matrix Reasoning, etc], attention [Forward Digit span, etc], executive functions [ Trail Making Test Part B, etc], memory [Rey Auditory Verbal Learning Test], social cognition [Reading the Mind in the Eyes Test, etc], etc.
+                </label>                </li>
+                <li></label> Watching a movie in the MRI scanner    </label>                </li>
+                <li></label> Peer presence during task - giving a speech in the lab in front of confederates/video recording of an audience    </label>                </li>
+
+            </ul>
+            
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <p>The process of interest is measured in real-world situations </p>
+
+            <ul>
+                <li> <label>Selective attention task where both targets and distractors are externally-driven and appear within a veridical external environment (classroom or public place like museum exhibitions)
+                </label></li>
+                <li> <label>Observing child interact with parent at home </label> </li>
+                <li></label>Classroom based and teacher lead cirriculum </label>  </li>
+                <li></label> Free narratives </label>  </li>
+                <li></label> Observing/transcribing videos of treatment sessions with clinician</label>  </li>
+                <li></label> Using a fitbit-like motion sensor to measure daily activity </label>  </li>
+                <li></label> Social network analysis </label>  </li>
+                <li></label> In classroom behavior </label>  </li>
+                <li></label> EMA about social behavior </label>  </li>
+
+
+            </ul>
+
+            <h4> 5. … how your stimuli reflect that context?</h4>
+            <p> Here is a general explanation for what the different categories mean with regard to the stimuli plus more examples: </p>
+
+
+            <p class="lead">Controlled laboratory research examples:</p>
+            <p>Total control over stimuli </p>
+
+            <ul>
+                <li> <label> Response or accuracy time in rigorous, process-specific lab-based tasks            </label></li>
+                <li> <label> Environmental or demprgaphic variables included only as covariates</label>                </li>
+                <li> <label> Biomarkers such as cortisol level, RNA expression or DNA methylation, etc.          </label></li>
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <p>Some, but not total, control over stimuli </p>
+
+            <ul>
+                <li> <label> Using a physical setup inside the testing room or virtual reality </label></li>
+                <li> <label> Inter-subject correlational analyses of brain mechanisms during movie watching  </label>        </li>
+                <li> <label> In a different / multiple senses </label></li>
+                <li> <label> In non-traditional populations (across the lifespan; individuals with non-traditional experience like sensory impairment)  </label></li>
+                <li> <label> Questionnaire about real-life risk taking                 </label></li>
+                <li> <label> Self/parent report on outside lab behavior as variables of Inter-subject   </label></li>
+                            
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <p>No control over stimuli </p>
+
+            <ul>
+                <li> <label> Impact of variable of interest for grades or standardized test scores</label>   </li>
+                <li> <label> Topics in free reports extracted by natural language processing (such as LSA or speach graphs) </label>   </li>
+                <li> <label> Ecological momentary assessment (EMA) ratings of anxiety symptoms                </label>   </li>
+                <li> <label> Behavior in classroom                </label>   </li>
+                <li> <label> Social network analysis               </label>   </li>
+                <li> <label> Real-life risk-taking data (alcohol use) or incarceration rates  </label>   </li>
+
+            </ul>
+
+            <h4>6. … how your measures reflect that behavior?  </h4>
+
+            <p class="lead">Controlled laboratory research examples:</p>
+            <ul>
+                <li> <label> Well-understood, well-researched brain correlates of a specific cognitive process, such as the Event-Related Potential (ERP) components P1 or N2 (or a cognitive contrast in fMRI), tested in typical conditions</label>  </li>
+                <li> <label> Response or accuracy time in rigorous, process-specific lab-based tasks</label>  </li>
+                <li> <label> Environmental variables included only as covariates</label>  </li>
+                <li> <label> Biomarkers such as cortisol level, RNA expression or DNA methylation, etc.</label>  </li>
+
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <ul>
+                <li> <label> Using a physical setup inside the testing room or virtual reality  </label>    </li>
+                <li> <label>Inter-subject correlational analyses of brain mechanisms during movie watching</label>  </li>
+                <li> <label>In a different / multiple senses</label>  </li>
+                <li> <label>In non-traditional populations (across the lifespan; individuals with non-traditional experience like sensory impairment)</label>  </li>
+                <li> <label>Questionnaire about real-life risk taking </label>  </li>
+                <li> <label>Self / parent report on outside lab behavior as variables of interest </label>  </li>
+
+
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <ul>
+                <li> <label> Impact of variable of interest for grades or standardized test scores </label></li>
+                <li> <label> Topics in free reports extracted by natural language processing (LSA or speech graphs) </label></li>
+                <li> <label> Ecological momentary assessment (EMA) ratings of anxiety symptoms </label></li>
+                <li> <label> Behavior in classroom </label></li>
+                <li> <label> Social network analysis </label></li>
+                <li> <label> Real-life behavior data like risk-taking (alcohol use) or incarceration rates </label></li>
+
+
+            </ul>
+
+            <h4>7. Are non-research stakeholders involved? ( teachers, caretaker, institutions, clinicians) </h4>
+
+            <p class="lead">Controlled laboratory research:</p>
+            <p >Practitioners (clinicians, teachers, head teachers, speech therapists) are not involved or involved by providing the access to the populations of interests</p>
+
+            <p class="lead">Partially naturalistic laboratory research approach:</p>
+            <p >Practitioners advise on and contribute at some but not all stages of the research project ( study design)</p>
+
+            <p class="lead">Naturalistic real-world research approach:</p>
+            <p >Practitioners advise on and contribute to all stages of the research project (help design, implement, and report on an intervention
+            </p>
+
+            <h4> 8. Please indicate where your intervention fits in best.</h4>
+
+            <p class="lead">Controlled laboratory research examples:</p>
+            <ul>
+                <li> <label> Computer paradigm to train participants to look at neutral instead of negative faces</label></li>
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <ul>
+                <li> <label> Training in school with standardized training but outside the regular classroom activities</label></li>
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <ul>
+                <li> <label> Providing first-line treatment for psychopathology by trained clinician</label></li>
+            </ul>
+
+        </div>
+
+        </article>
+
+    </section>
+
+    <section class="seccion">
+        <div class="container">  
+            <fieldset id="contact">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Abbreviations</button>
+            </fieldset>
+        <article>
+            <p> EEG, Encephalography; MRI/fMRI, functional/magnetic resonance imaging; fNIRS, functional near-infrared spectroscopy; EMA, ecological momentary assessment. 
+                </p>
+        </article>
+
+    </section>
+<!-- 
+    <section class="seccion">
+        <div class="container">  
+            <fieldset id="contact">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">If you are running an itervention</button>
+            </fieldset>
+        <article>
+            <p>You may be intrested in check out this <a href="https://fluxsociety.org/">Can you Paul sent the link to
+                    the form you shared</a> .</p>
+        </article>
+
+    </section>
+
+
+
+                <p class="lead">Controlled laboratory research examples:</p>
+            <ul>
+                <li> <label> Simplistic stimuli presented multiple times</label></li>
+                <li> <label> Stimuli presented one at a time, sequentially</label></li>
+                <li> <label> Stimuli varying in their goal-relevance to the performed task (there are distractor and target stimuli)</label>
+                </li>
+                <li></label> Audio clips of phonemes or words</label></li>
+                <li> <label> Colored 2D shapes</label></li>
+                <li> <label> Pictures of faces with different expressions </label></li>
+                <li> <label> Unisensory stimuli</label></li>
+
+                 
+            </ul>
+            <p class="lead">Partially naturalistic laboratory research approach examples:</p>
+            <ul>
+                <li> <label> Rich, naturalistic stimuli with whose properties and their distribution reflect those present in the relevant context </label></li>
+                <li> <label> Stimuli varying in their goal-relevance to the performed task (there are distractor and target stimuli) while varying also on other dimensions (see below)  </label></li>
+                <li> <label> Distractors or target stimulating many senses (visual/auditory, multisensory)</label></li>
+                <li></label> Distractors/targets vary in their familiarity to the observer, being unfamiliar or representing/being connected by a naturalistic object category (animate objects, tools, conspecifics) multisensory</label> </li>
+                <li></label> Stimuli whose meaning is dependent on the context (audio or audiovisual clips of social scenarios; watching movies or listening to stories; stimuli presented in VR)  </label></li>
+
+            </ul>
+            <p class="lead">Naturalistic real-world research approach examples:</p>
+            <ul>
+                <li> <label> Veridical real-world stimuli whose properties and their distribution reflect those present in the relevant context</label>                </li>
+                <li> <label> Disruptions from classmates during a lesson at school </label></li>
+                <li> <label> In-place experiences (such as subjective effect of a drug in natural settings, risk activity, etc) </label></li>
+
+            </ul>
+-->
+
+</div>
+
+{% endblock %}
